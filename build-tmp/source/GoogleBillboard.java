@@ -18,9 +18,8 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 
 public void setup() { 
 	String eNew = e.replace(".", ""); 
-	String hold = ""; 
 	for (int i = 0; i < eNew.length() - 10; i++) { 
-		hold = eNew.substring(i, i + 10); 
+		String hold = eNew.substring(i, i + 10); 
 		double num = Double.parseDouble(hold); 
 		if (isPrime(num)) { 
 			System.out.println(num); 
